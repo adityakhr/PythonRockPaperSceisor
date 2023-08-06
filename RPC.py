@@ -3,9 +3,9 @@ import math
 def runProgram():
     userWin=0
     computerWin=0
-    options = {1:"Rock", 2:"Paper", 3:"Sceior"}
+    options = {1:"Rock", 2:"Paper", 3:"Scissor"}
     while(True):
-        input1=input("Enter your choice Rock/Paper/Sceior: ")
+        input1=input("Enter your choice Rock/Paper/Scissor: ")
         computerChoice = options[math.floor((random.random()*10)%3)+1]
         if input1.upper()=="ROCK" and computerChoice.upper()=="ROCK":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
@@ -16,7 +16,7 @@ def runProgram():
             computerWin+=1
             print("Computer Wins")
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
-        elif input1.upper()=="ROCK" and computerChoice.upper()=="SCEIOR":
+        elif input1.upper()=="ROCK" and computerChoice.upper()=="Scissor":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("User Wins")
             userWin+=1
@@ -25,7 +25,7 @@ def runProgram():
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("Tie")
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
-        elif input1.upper()=="PAPER" and computerChoice.upper()=="SCEIOR":
+        elif input1.upper()=="PAPER" and computerChoice.upper()=="Scissor":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("Computer Wins")
             computerWin+=1
@@ -35,16 +35,16 @@ def runProgram():
             print("User Wins")
             userWin+=1
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
-        elif input1.upper()=="SCEIOR" and computerChoice.upper()=="SCEIOR":
+        elif input1.upper()=="Scissor" and computerChoice.upper()=="Scissor":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("Tie")
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
-        elif input1.upper()=="SCEIOR" and computerChoice.upper()=="ROCK":
+        elif input1.upper()=="Scissor" and computerChoice.upper()=="ROCK":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("Computer Wins")
             computerWin+=1
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
-        elif input1.upper()=="SCEIOR" and computerChoice.upper()=="PAPER":
+        elif input1.upper()=="Scissor" and computerChoice.upper()=="PAPER":
             print("Computer chose to "+options[math.floor((random.random()*10)%2)+1])
             print("User Wins")
             userWin+=1
