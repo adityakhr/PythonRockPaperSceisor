@@ -50,7 +50,7 @@ def runProgram():
             userWin+=1
             print("UserWins="+str(userWin)+" , ComputerWins="+str(computerWin))
         else:
-            print("Invalid Input...Thanks for Playing.")
+            print("Invalid Input. Thanks for Playing...")
             break 
 
         input2=input("Do you want play again Yes/No: ")
@@ -60,7 +60,7 @@ def runProgram():
             print("Thanks for playing")
             break
         else:
-            print("Invalid Input...Thanks for Playing.")
+            print("Invalid Input. Thanks for Playing...")
             break 
 
 if __name__=="__main__":
